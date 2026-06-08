@@ -5,12 +5,15 @@ namespace App\Providers;
 use App\Models\Reservation;
 use App\Policies\ReservationPolicy;
 use Illuminate\Support\Facades\Gate;
+use Illuminate\Support\Facades\URL;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
 {
     public function boot(): void
     {
+        URL::forceScheme('https');
+
         Gate::policy(Reservation::class, ReservationPolicy::class);
     }
 }
