@@ -1,7 +1,7 @@
 <section class="space-y-6">
     <header>
-        <h2 class="text-lg font-medium text-gray-900">Eliminar cuenta</h2>
-        <p class="mt-1 text-sm text-gray-600">Una vez eliminada, todos los datos serán borrados permanentemente.</p>
+        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">Eliminar cuenta</h2>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Una vez eliminada, todos los datos serán borrados permanentemente.</p>
     </header>
 
     <x-danger-button x-data=""
@@ -14,8 +14,8 @@
             @csrf
             @method('delete')
 
-            <h2 class="text-lg font-medium text-gray-900">¿Seguro que quieres eliminar tu cuenta?</h2>
-            <p class="mt-1 text-sm text-gray-600">Esta acción no se puede deshacer. Ingresa tu contraseña para confirmar.</p>
+            <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">¿Seguro que quieres eliminar tu cuenta?</h2>
+            <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Esta acción no se puede deshacer. Ingresa tu contraseña para confirmar.</p>
 
             <div class="mt-6">
                 <x-input-label for="password" value="Contraseña" class="sr-only" />

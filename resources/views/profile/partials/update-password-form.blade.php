@@ -1,7 +1,7 @@
 <section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900">Actualizar contraseña</h2>
-        <p class="mt-1 text-sm text-gray-600">Usa una contraseña larga y segura.</p>
+        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">Actualizar contraseña</h2>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Usa una contraseña larga y segura.</p>
     </header>
 
     <form method="post" action="{{ route('password.update') }}" class="mt-6 space-y-6">
@@ -33,7 +33,7 @@
             <x-primary-button>Guardar</x-primary-button>
 
             @if (session('status') === 'password-updated')
-                <p class="text-sm text-gray-600">Guardado.</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Guardado.</p>
             @endif
         </div>
     </form>

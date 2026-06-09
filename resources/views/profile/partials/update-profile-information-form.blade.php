@@ -1,7 +1,7 @@
 <section>
     <header>
-        <h2 class="text-lg font-medium text-gray-900">Información del perfil</h2>
-        <p class="mt-1 text-sm text-gray-600">Actualiza tu nombre y correo electrónico.</p>
+        <h2 class="text-lg font-medium text-gray-900 dark:text-gray-100">Información del perfil</h2>
+        <p class="mt-1 text-sm text-gray-600 dark:text-gray-400">Actualiza tu nombre y correo electrónico.</p>
     </header>
 
     <form id="send-verification" method="post" action="{{ route('verification.send') }}">
@@ -30,7 +30,7 @@
             <x-primary-button>Guardar</x-primary-button>
 
             @if (session('status') === 'profile-updated')
-                <p class="text-sm text-gray-600">Guardado.</p>
+                <p class="text-sm text-gray-600 dark:text-gray-400">Guardado.</p>
             @endif
         </div>
     </form>
